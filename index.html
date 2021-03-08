@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function sayHello(params) {
+            alert("Hello HTML!")
+        }
+    </script>
+    <style>
+        body{background:#DDD;; 
+            }
+            h1{
+                background-color: rgb(116, 139, 92); font-weight: lighter;
+            }
+            fieldset{
+                background: #efefef;padding: 10px;border: 1px solid#CCC;margin-bottom: 20px;
+            }
+            legend{
+                background: #fff;border: 1px solid #ccc;padding: 5px;
+            }
+    </style>
+</head>
+<body>
+    <h1>مطعم المحبه للاكلات السريعه</h1>
+    <p>This is our First Menu.</p>
+    <a href="http://www.google.com" target="_blank">Google</a>
+
+    <div>I love HTML</div>
+    
+    <br>
+    <!-- <img src="./html-images-df.jpg" alt="Whatsapp!"> --> <!-- commented because it is takeing too much place of the web page -->
+    <hr>
+
+    <form name="register">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label>Username</label>
+        <input type="text" name="username" placeholder="ضع اسم المستخدم هنا" maxlength="11">
+
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="ضع كلمه السر هنا">
+
+        <br>
+
+        <label>Your Message</label><br>
+        <textarea name="" id="our-text" cols="30" rows="10" placeholder="Only 30 Character Field "></textarea>
+        
+        <br>
+        <input type="checkbox" id="checkbox">
+        <label>تذكر كلمه السر</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Your Favorite</legend>
+        <label>Choose Your Browser!</label> <br>
+
+        <input type="radio" name="browser" value="Chrome">  Google Chrome  <br>
+        <input type="radio" name="browser" value="Firefox"> Mozilla Firefox <br>
+        <input type="radio" name="browser" value="Opera">   Opera <br>
+
+        <br>
+
+        <label>Choose Your Mobile!</label> <br>
+        
+        <input type="radio" name="Mobile" value="iPhone"> iPhone <br>
+        <input type="radio" name="Mobile" value="Samsung"> Samsung <br>
+        <input type="radio" name="Mobile" value="Nokia"> Nokia <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Send OPtions</legend>
+        <select name="time" id="" size="3">
+            <option value="">Now</option>
+            <option value="">Tomorrow</option>
+            <option value="">After a Week</option>
+        </select>
+
+        <input type="hidden" value="testing">
+
+        <input type="button" value="Say Hello!" value="Say Hello!" onclick="sayHello()">
+
+        <input type="submit" value="تسجيل دخول">
+
+        <input type="reset" value="Restore default">
+
+        <br>
+        
+        <label>Upload your Cv</label>
+        <input type="file" value="file" id="">
+        
+        <br>
+        </fieldset>
+
+<!--         <input type="image" src="./html-images-df.jpg" alt="html and laptop image"> --> <!-- commented because it is takeing too much place of the web page -->
+
+    </form>
+</body>
+</html>
