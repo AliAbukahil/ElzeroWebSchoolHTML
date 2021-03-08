@@ -78,10 +78,19 @@
         <br>
         <fieldset>
             <legend>Send OPtions</legend>
-        <select name="time" id="" size="3">
-            <option value="">Now</option>
-            <option value="">Tomorrow</option>
-            <option value="">After a Week</option>
+
+        <select name="time">
+            <!-- the value field will be sent to database! -->
+            <optgroup label="Near Time" disabled>
+            <option value="1">Now</option>
+            <option value="2">Tomorrow</option>
+            <option value="3">After a Week</option>
+            </optgroup>
+            <optgroup label="Far Time">
+            <option value="4">After a year</option>
+            <option value="5">10 years</option>
+            <option value="6">20 years</option>
+            </optgroup>
         </select>
 
         <input type="hidden" value="testing">
